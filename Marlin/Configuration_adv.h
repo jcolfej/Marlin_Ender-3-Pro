@@ -1520,7 +1520,7 @@
 #endif // HAS_DISPLAY || DWIN_LCD_PROUI
 
 // Add 'M73' to set print job progress, overrides Marlin's built-in estimate
-// #define SET_PROGRESS_MANUALLY
+#define SET_PROGRESS_MANUALLY
 #if ENABLED(SET_PROGRESS_MANUALLY)
 #define SET_PROGRESS_PERCENT // Add 'P' parameter to set percentage done
 #define SET_REMAINING_TIME   // Add 'R' parameter to set remaining time
@@ -1535,7 +1535,7 @@
 #if HAS_DISPLAY && EITHER(SDSUPPORT, SET_PROGRESS_MANUALLY)
 #define SHOW_PROGRESS_PERCENT // Show print progress percentage (doesn't affect progress bar)
 #define SHOW_ELAPSED_TIME     // Display elapsed printing time (prefix 'E')
-// #define SHOW_REMAINING_TIME           // Display estimated time to completion (prefix 'R')
+#define SHOW_REMAINING_TIME           // Display estimated time to completion (prefix 'R')
 #if ENABLED(SET_INTERACTION_TIME)
 #define SHOW_INTERACTION_TIME // Display time until next user interaction ('C' = filament change)
 #endif
