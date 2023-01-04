@@ -1352,7 +1352,7 @@
 #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 // Force the use of the probe for Z-axis homing
-// #define USE_PROBE_FOR_Z_HOMING
+#define USE_PROBE_FOR_Z_HOMING
 
 /**
  * Z_MIN_PROBE_PIN
@@ -1641,7 +1641,7 @@
  */
 #define NOZZLE_TO_PROBE_OFFSET \
   {                            \
-    -36.5, -40, 0               \
+    -32, -40, 0                \
   }
 
 // Most probes should stay away from the edges of the bed, but
